@@ -3,7 +3,6 @@ Dockertools
 Simple bash commands for Docker.
 
 ## Features
-Install configurations for:
  - get IP for docker container by first part of container id
  - list all runnded dockers and show IP for them
 
