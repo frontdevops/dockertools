@@ -5,7 +5,7 @@ Simple bash commands for Docker.
 ## Features
 Install configurations for:
  - get IP for docker container by first part of container id
- - list all runded dockers and show IP for them
+ - list all runnded dockers and show IP for them
 
 ## Installation
 Clone this repo and add in your .bashrc script this line:
