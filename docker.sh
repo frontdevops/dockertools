@@ -2,7 +2,7 @@
 # source docker.sh
 
 dockerip() {
-	docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$@"
+    docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$@"
 }
 
 dockerips() {
