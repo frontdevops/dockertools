@@ -8,18 +8,18 @@ Simple bash commands for Docker.
 
 ## Installation
 Clone this repo and add in your .bashrc script this line:
-```
+```bash
 source dockertools/docker.sh
 ```
 
 ## Usage
 Show IP for all runned containers
-```
+```bash
 dockerips
 ```
 
 Show IP for container by ID
-```
+```bash
 dockerip $UID
 ```
 
@@ -28,7 +28,7 @@ dockerip $UID
 ## Last runned container
 You can get the ID of the last run container
 
-```
+```bash
 _id_
 ```
 
