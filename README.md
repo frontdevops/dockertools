@@ -33,8 +33,9 @@ _id_
 ```
 
 Usage:
-```
-docker stop _id_
+```bash
+docker stop `_id_`
+docker restart $(_id_)
 ```
 
 ## WARNING!
