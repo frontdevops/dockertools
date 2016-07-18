@@ -15,4 +15,6 @@ dockerips() {
 	docker ps -a | sed -e "$regex"
 }
 
+alias lastdocker='docker ps -l -q'
+
 #EOF#
