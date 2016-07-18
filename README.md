@@ -29,11 +29,16 @@ dockerip $UID
 You can get the ID of the last run container
 
 ```
-`_id_`
+_id_
 ```
 
+Usage:
+```
+docker stop _id_
+```
 
-_WARNING!_ If you not trust me, don't do it. You can manually edit your `.bashrc` and copy code from docker.sh.
+## WARNING!
+If you not trust me, don't do it. You can manually edit your `.bashrc` and copy code from docker.sh.
 Or not to touch anything and leave everything as is. It's your choice.
 
 ## License
