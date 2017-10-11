@@ -2,11 +2,11 @@
 # source docker.sh
 
 dockerip() {
-    docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$@"
+    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
 }
 
 dockerips() {
-	for dock in $(docker ps | tail -n +2 | cut -d" " -f1)
+	for dock in $(docker ps|tail -n +2|cut -d" " -f1)
 	do
 		local dock_ip=$(dockerip $dock)
 		[[ -n "$dock_ip" ]] && regex="s/$dock\s\{4\}/${dock:0:4}  $dock_ip/g;$regex"
